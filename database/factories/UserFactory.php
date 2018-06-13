@@ -1,6 +1,6 @@
 <?php
 
-use Faker\Generator as Faker;
+// use Faker\Generator as Faker;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +13,9 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(App\User::class, function (Faker $faker) {
+$factory->define(App\Models\User::class, function ($faker) {
+    $faker = Faker\Factory::create('en_UG');
+
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
