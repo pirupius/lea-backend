@@ -9,8 +9,7 @@ class FarmerController extends Controller
 {
     public function index()
     {
-        $farmers = Farmer::all();
-
+        $farmers = Farmer::paginate(20);
         return view('farmers.index', compact(['farmers']));
     }
 }
