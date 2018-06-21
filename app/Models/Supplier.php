@@ -1,12 +1,12 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Supplier extends Model
 {
     protected $fillable = [
-        'name', 'phone', 'district', 'town', 'country'
+        'name', 'phone', 'pesticides', 'district', 'town', 'country'
     ];
 }

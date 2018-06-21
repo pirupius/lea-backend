@@ -13,8 +13,9 @@ class AgroexpertController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        //
+    {        
+        $agroexperts = Agroexpert::paginate(20);
+        return view('agroexperts.index', compact('agroexperts'));
     }
 
     /**

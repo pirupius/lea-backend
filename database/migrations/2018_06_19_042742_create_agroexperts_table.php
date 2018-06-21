@@ -15,6 +15,11 @@ class CreateAgroexpertsTable extends Migration
     {
         Schema::create('agroexperts', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->string('phone', 20);
+            $table->string('district', 50)->nullable();
+            $table->string('village', 50)->nullable();
+            $table->string('country', 50)->nullable();
             $table->timestamps();
         });
     }
