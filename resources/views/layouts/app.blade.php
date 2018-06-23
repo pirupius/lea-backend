@@ -35,10 +35,14 @@
 
                 <div class="collapse navbar-collapse pl-5" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+
                     @auth
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="/farmers">Farmers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/groups">Groups</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/suppliers">Suppliers</a>
