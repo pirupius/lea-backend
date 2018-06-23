@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Agroexpert extends Model
 {
     protected $fillable = [
-        'name', 'phone', 'district', 'country'
+        'name', 'phone', 'specialities', 'district', 'village', 'subcounty', 'country'
     ];
 }

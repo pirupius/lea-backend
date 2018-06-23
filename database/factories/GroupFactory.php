@@ -2,7 +2,7 @@
 
 // use Faker\Generator as Faker;
 
-$factory->define(App\Models\Supplier::class, function ($faker) {
+$factory->define(App\Models\Group::class, function ($faker) {
     $faker = Faker\Factory::create('en_UG');
 
     $districts = [
@@ -15,13 +15,10 @@ $factory->define(App\Models\Supplier::class, function ($faker) {
         'Soroti',
     ];
 
-    $pesticides = ['Rocket', 'Chemical X', 'Dangerous AZ'];
     $countries = ['Uganda', 'Kenya', 'Tanzania'];
 
     return [
         'name'       => $faker->name,
-        'phone'      => $faker->unique()->phoneNumber,
-        'pesticides' => $faker->randomElement($pesticides),
         'district'   => $faker->randomElement($districts),
         'village'    => $faker->region,
         'subcounty'  => $faker->region,
