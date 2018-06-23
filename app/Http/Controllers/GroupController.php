@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Group;
+use App\Models\Group;
 use Illuminate\Http\Request;
 
 class GroupController extends Controller
@@ -14,7 +14,8 @@ class GroupController extends Controller
      */
     public function index()
     {
-        //
+        $groups = Group::paginate(20);
+        return view('groups.index', compact(['groups']));
     }
 
     /**
@@ -81,5 +82,10 @@ class GroupController extends Controller
     public function destroy(Group $group)
     {
         //
+    }
+
+    public function members(Group $group)
+    {
+        return view('groups.members', compact('group'));
     }
 }
