@@ -35,23 +35,26 @@
 
                 <div class="collapse navbar-collapse pl-5" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/farmers">Farmers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/groups">Groups</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/suppliers">Suppliers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/agroexperts">Agro-Experts</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/reports">Reports</a>
-                        </li>
-                    </ul>
+
+                    @auth
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/farmers">Farmers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/groups">Groups</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/suppliers">Suppliers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/agroexperts">Agro-Experts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/reports">Reports</a>
+                            </li>
+                        </ul>
+                    @endauth
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
