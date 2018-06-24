@@ -4,24 +4,32 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
-            <div class="card col-md-4 mb-3">
-                <div class="card-body">
-                    <h4 class="text-success">{{ $farmers->count() }}</h4>
-                    <p>Registered Farmers</p>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="text-success">{{ $farmers->count() }}</h4>
+                            <p>Registered Farmers</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card col-md-4 mb-3">
-                <div class="card-body">
-                    <h4 class="text-success">{{ $agroexpert->count() }}</h4>
-                    <p>Agro Experts</p>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="text-success">{{ $agroexpert->count() }}</h4>
+                            <p>Agro Experts</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card col-md-4 mb-3">
-                <div class="card-body">
-                    <h4 class="text-success">{{ $suppliers->count() }}</h4>
-                    <p>Pesticide Suppliers</p>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="text-success">{{ $suppliers->count() }}</h4>
+                            <p>Pesticide Suppliers</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
