@@ -17,5 +17,6 @@ class DatabaseSeeder extends Seeder
         $this->call(AgroexpertsTableSeeder::class);
         $this->call(GroupsTableSeeder::class);
         $this->call(FarmerGroupTableSeeder::class);
+        $this->call(NewsTableSeeder::class);
     }
 }
