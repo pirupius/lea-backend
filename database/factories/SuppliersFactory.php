@@ -5,26 +5,15 @@
 $factory->define(App\Models\Supplier::class, function ($faker) {
     $faker = Faker\Factory::create('en_UG');
 
-    $districts = [
-        'Kitgum',
-        'Masaka',
-        'Mukono',
-        'Kasese',
-        'Kabale',
-        'Jinja',
-        'Soroti',
-    ];
-
     $pesticides = ['Rocket', 'Chemical X', 'Dangerous AZ'];
     $countries = ['Uganda', 'Kenya', 'Tanzania'];
+    $companies = ['Amvac', 'Arysta', 'Dow Agrosciences', 'Drexel', 'Nufarm', 'Gowan', 'UCCDL'];
 
     return [
-        'name'       => $faker->name,
+        'name'       => $faker->randomElement($companies),
         'phone'      => $faker->unique()->phoneNumber,
         'pesticides' => $faker->randomElement($pesticides),
-        'district'   => $faker->randomElement($districts),
-        'village'    => $faker->region,
-        'subcounty'  => $faker->region,
+        'location'   => $faker->region,
         'country'    => $faker->randomElement($countries),
     ];
 });

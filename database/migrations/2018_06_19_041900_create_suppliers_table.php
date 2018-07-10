@@ -18,9 +18,7 @@ class CreateSuppliersTable extends Migration
             $table->string('name');
             $table->string('phone', 20);
             $table->string('pesticides', 100)->nullable();
-            $table->string('district', 50)->nullable();
-            $table->string('village', 50)->nullable();
-            $table->string('subcounty', 50)->nullable();
+            $table->string('location', 50)->nullable();
             $table->string('country', 50)->nullable();
             $table->timestamps();
         });
