@@ -29,7 +29,7 @@
                                     <th scope="col">Name</th>
                                     <th scope="col">Phone</th>
                                     <th scope="col">District</th>
-                                    <th scope="col">village</th>
+                                    <th scope="col">Village</th>
                                     <th scope="col">Country</tountryh>
                                 </tr>
                             </thead>

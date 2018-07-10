@@ -29,8 +29,7 @@
                                     <th scope="col">Name</th>
                                     <th scope="col">Phone</th>
                                     <th scope="col">Pesticides</th>
-                                    <th scope="col">District</th>
-                                    <th scope="col">Village</th>
+                                    <th scope="col">Location</th>
                                     <th scope="col">Country</th>
                                 </tr>
                             </thead>
@@ -40,8 +39,7 @@
                                         <td>{{ $supplier->name }}</td>
                                         <td>{{ $supplier->phone }}</td>
                                         <td>{{ $supplier->pesticides }}</td>
-                                        <td>{{ $supplier->district }}</td>
-                                        <td>{{ $supplier->village }}</td>
+                                        <td>{{ $supplier->location }}</td>
                                         <td>{{ $supplier->country }}</td>
                                     </tr>
                                 @endforeach

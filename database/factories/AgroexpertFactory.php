@@ -15,13 +15,13 @@ $factory->define(App\Models\Agroexpert::class, function ($faker) {
         'Soroti',
     ];
 
-    $countries = ['Uganda', 'Kenya', 'Tanzania'];
+    // $countries = ['Uganda', 'Kenya', 'Tanzania'];
 
     return [
         'name'      => $faker->name,
         'phone'     => $faker->unique()->phoneNumber,
         'district'  => $faker->randomElement($districts),
         'village'   => $faker->region,
-        'country'   => $faker->randomElement($countries),
+        'country'   => 'Uganda',
     ];
 });
