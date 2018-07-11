@@ -50,9 +50,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/agroexperts">Agro-Experts</a>
                             </li>
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a class="nav-link" href="/reports">Reports</a>
-                            </li>
+                            </li> --}}
                         </ul>
                     @endauth
 
