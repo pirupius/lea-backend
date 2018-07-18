@@ -13,7 +13,7 @@ $factory->define(App\Models\Supplier::class, function ($faker) {
         'name'       => $faker->randomElement($companies),
         'phone'      => $faker->unique()->phoneNumber,
         'pesticides' => $faker->randomElement($pesticides),
-        'location'   => $faker->region,
-        'country'    => $faker->randomElement($countries),
+        'location'   => $faker->streetAddress,
+        'country'    => 'Uganda',
     ];
 });
