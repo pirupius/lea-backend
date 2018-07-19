@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\ExtensionWorker;
 use Illuminate\Database\Seeder;
 
 class ExtensionWorkerTableSeeder extends Seeder

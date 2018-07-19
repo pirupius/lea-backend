@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ExtensionWorker;
 use Illuminate\Http\Request;
+use App\Models\ExtensionWorker;
 
 class ExtensionWorkerController extends Controller
 {
@@ -14,7 +14,8 @@ class ExtensionWorkerController extends Controller
      */
     public function index()
     {
-        //
+        $extensionWorkers = ExtensionWorker::paginate(20);
+        return view('extension-workers.index', compact('extensionWorkers'));
     }
 
     /**

@@ -9,6 +9,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('/farmers', 'FarmerController');
     Route::resource('/suppliers', 'SuppliersController');
     Route::resource('/agroexperts', 'AgroexpertController');
+    Route::resource('/extension-workers', 'ExtensionWorkerController');
     Route::resource('/groups', 'GroupController');
 });
 

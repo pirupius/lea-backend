@@ -50,6 +50,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/agroexperts">Agro-Experts</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/extension-workers">Extension Workers</a>
+                            </li>
                             {{-- <li class="nav-item">
                                 <a class="nav-link" href="/reports">Reports</a>
                             </li> --}}
