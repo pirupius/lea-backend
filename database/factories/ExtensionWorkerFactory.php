@@ -1,8 +1,6 @@
 <?php
 
-// use Faker\Generator as Faker;
-
-$factory->define(App\Models\Agroexpert::class, function ($faker) {
+$factory->define(App\Models\ExtensionWorker::class, function ($faker) {
     $faker = Faker\Factory::create('en_UG');
 
     return [

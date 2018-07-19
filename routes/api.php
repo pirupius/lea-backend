@@ -17,6 +17,9 @@ Route::group(['namespace' => 'Api'], function () {
     //agronomists
     Route::get('/agronomists', 'DemoApiController@agronomists');
 
+    //extension workers
+    Route::get('/extension_workers', 'DemoApiController@extension_workers');
+
     //plant tracker
     Route::get('/tracker', 'PlantApiController@tracker');
 });

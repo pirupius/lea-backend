@@ -21,6 +21,6 @@ class FarmersTableSeeder extends Seeder
             'location'  => 'Town Council',
         ]);
 
-        factory(Farmer::class, 50)->create();
+        factory(Farmer::class, 30)->create();
     }
 }
