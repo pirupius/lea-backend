@@ -17,6 +17,7 @@ class PlantApiController extends Controller
             $start_date = Carbon::now();
         }
 
+        $planting_date = $start_date->toDateString();
         $tracker = array();
 
         foreach ([0, 7, 21, 49, 91, 147, 213, 283] as $days) {
@@ -105,7 +106,7 @@ class PlantApiController extends Controller
 
         return Response::json([
             'tracker'       => $tracker,
-            'planting_date' => $start_date->toDateString(),
+            'planting_date' => $planting_date,
             'success' => 1
         ], 200);
     }
