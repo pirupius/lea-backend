@@ -104,7 +104,8 @@ class PlantApiController extends Controller
         }
 
         return Response::json([
-            'tracker' => $tracker,
+            'tracker'       => $tracker,
+            'planting_date' => $start_date->toDateString(),
             'success' => 1
         ], 200);
     }
