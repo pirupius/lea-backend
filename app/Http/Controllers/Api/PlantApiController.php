@@ -20,7 +20,7 @@ class PlantApiController extends Controller
         $planting_date = $start_date->toDateString();
         $tracker = array();
 
-        foreach ([0, 7, 21, 49, 91, 147, 213, 283] as $days) {
+        foreach ([[0, 7, 14, 28, 42, 56, 66, 70] as $days) {
             switch ($days) {
                 case 0:
                     $date = $start_date->addDays($days);
@@ -42,7 +42,7 @@ class PlantApiController extends Controller
                     ]);
                     break;
 
-                case 21:
+                case 14:
                     $date = $start_date->addDays($days);
                     array_push($tracker, [
                         'stage'       => 'V5',
@@ -52,7 +52,7 @@ class PlantApiController extends Controller
                     ]);
                     break;
 
-                case 49:
+                case 28:
                     $date = $start_date->addDays($days);
                     array_push($tracker, [
                         'stage'       => 'V8',
@@ -62,7 +62,7 @@ class PlantApiController extends Controller
                     ]);
                     break;
 
-                case 91:
+                case 42:
                     $date = $start_date->addDays($days);
                     array_push($tracker, [
                         'stage'       => 'V12',
@@ -72,7 +72,7 @@ class PlantApiController extends Controller
                     ]);
                     break;
 
-                case 147:
+                case 56:
                     $date = $start_date->addDays($days);
                     array_push($tracker, [
                         'stage'       => 'VT',
@@ -82,7 +82,7 @@ class PlantApiController extends Controller
                     ]);
                     break;
 
-                case 213:
+                case 66:
                     $date = $start_date->addDays($days);
                     array_push($tracker, [
                         'stage'       => 'R1',
@@ -92,7 +92,7 @@ class PlantApiController extends Controller
                     ]);
                     break;
 
-                case 283:
+                case 70:
                     $date = $start_date->addDays($days);
                     array_push($tracker, [
                         'stage'       => 'VE',
